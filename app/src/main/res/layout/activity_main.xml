@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="top"
+            android:fontFamily="@font/jua"
+            android:gravity="center"
+            android:text="Waang"
+            android:textColor="#B58DFA"
+            android:textSize="40dp"
+            android:textStyle="bold"></TextView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/noticeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/edge"
+        android:padding="10dp"
+        android:text="공지사항" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/userName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/jua"
+                android:text=""
+                android:textColor="#673AB7"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/nim2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/jua"
+                android:text="수정님"
+                android:textColor="#673AB7"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="15dp">
+        <TextView
+            android:id="@+id/majorshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/jua"
+            android:text=""
+            android:textColor="#673AB7" />
+
+    </LinearLayout>
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="20dp"
+        android:background="@drawable/edge">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/graduate"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_margin="20dp"
+                android:paddingLeft="36dp"
+                android:paddingTop="36dp"
+                android:paddingRight="18dp"
+                app:srcCompat="@drawable/grads" />
+
+            <ImageView
+                android:id="@+id/mileage"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_margin="20dp"
+                android:paddingLeft="18dp"
+                android:paddingTop="36dp"
+                android:paddingRight="36dp"
+                app:srcCompat="@drawable/moneys" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/graduateTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jua"
+                android:gravity="center"
+                android:text="졸업"
+                android:textColor="#9F6AFD"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/mileageTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jua"
+                android:gravity="center"
+                android:text="마일리지 / 장학금"
+                android:textColor="#9F6AFD"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/employ"
+                android:layout_width="150dp"
+                android:layout_height="124dp"
+                android:layout_margin="20dp"
+                android:paddingLeft="35dp"
+                android:paddingTop="35dp"
+                android:paddingRight="35dp"
+                app:srcCompat="@drawable/jobs" />
+
+            <ImageView
+                android:id="@+id/mypage"
+                android:layout_width="150dp"
+                android:layout_height="124dp"
+                android:layout_margin="20dp"
+                android:paddingLeft="35dp"
+                android:paddingTop="35dp"
+                android:paddingRight="35dp"
+                app:srcCompat="@drawable/infos" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/employTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jua"
+                android:gravity="center"
+                android:text="취업"
+                android:textColor="#9F6AFD"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/mypageTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jua"
+                android:gravity="center"
+                android:text="마이페이지"
+                android:textColor="#9F6AFD"
+                android:textSize="18sp" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@drawable/dialogcustom"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="322dp"
+    android:layout_height="155dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:textColor="#000"
+            android:layout_margin="10dp"
+            android:text="회원탈퇴"
+            android:fontFamily="@font/jua"
+            android:layout_weight="0.6"/>
+        <TextView
+            android:id="@+id/areyousure"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="탈퇴 하시겠습니까?"
+            android:fontFamily="@font/jua"
+            android:layout_weight="1.7"/>
+        <LinearLayout
+            android:layout_marginRight="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_gravity="right">
+            <Button
+                android:text="탈퇴"
+                android:textSize="10dp"
+                android:id="@+id/dialogbye"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="#BA95F1"
+                android:fontFamily="@font/jua"
+                android:scaleType="center"/>
+            <Button
+                android:text="취소"
+                android:textSize="10dp"
+                android:layout_marginLeft="4dp"
+                android:id="@+id/dialogcancle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="#BA95F1"
+                android:fontFamily="@font/jua"
+                android:scaleType="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

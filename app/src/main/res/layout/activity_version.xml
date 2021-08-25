@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:orientation="vertical"
+    tools:context=".Version">
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="버전 정보 확인"
+        android:fontFamily="@font/jua"
+        android:layout_marginBottom="50dp"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/getVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="이 앱의 버전은 1.0 버전 입니다."
+        android:fontFamily="@font/jua"
+        android:textSize="15sp"/>
+
+</LinearLayout>

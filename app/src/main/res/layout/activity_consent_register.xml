@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context=".Consent">
+
+    <TextView
+        android:id="@+id/consent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="개인정보 수집 및 이용 동의"
+        android:fontFamily="@font/jua"
+        android:textSize="25sp"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/goToBlog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:text=""
+        android:textSize="10sp"
+        android:scrollbars="vertical">
+        <TextView
+            android:id="@+id/consentContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="10sp"/>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="right">
+
+        <Switch
+            android:id="@+id/consentSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:switchMinWidth="60dp"/>
+
+        <Button
+            android:id="@+id/checking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/jua"
+            android:text="확인"
+            android:textSize="15sp"
+            app:backgroundTint="#FBE7FF"
+            android:textColor="#B58DFA"
+            app:iconTint="#FBE7FF" />
+
+    </LinearLayout>
+
+</LinearLayout>
+    </ScrollView>

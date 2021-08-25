@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/jua"
+                android:text="졸업 떠먹여줄게"
+                android:textColor="#B58DFA"
+                android:textSize="36sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0"
+                    app:srcCompat="@drawable/grads" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/jua"
+                    android:text="졸업요건을 보고 수정이가 앞으로 채워야할 과목을 알아보자!" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/info_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0"
+                    android:fontFamily="@font/jua"
+                    android:text=""
+                    android:textColor="#673AB7"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/sujungnim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jua"
+                    android:text="수정님"
+                    android:textColor="#BA95F1"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/jua"
+                android:text="교양"
+                android:textColor="#673AB7"
+                android:textSize="17sp" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:id="@+id/table1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="#E9DCFB"
+                    android:padding="8dp"
+                    android:stretchColumns="*"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TableRow
+                        android:background="#E9DCFB" >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="#FFBA95F1"
+                            android:fontFamily="@font/jua"
+                            android:background="#FFFFFF"
+                            android:layout_margin="1dp"
+                            android:text="이수구분" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="#FFBA95F1"
+                            android:fontFamily="@font/jua"
+                            android:background="#FFFFFF"
+                            android:layout_margin="1dp"
+                            android:text="공통교양" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="#FFBA95F1"
+                            android:fontFamily="@font/jua"
+                            android:background="#FFFFFF"
+                            android:layout_margin="1dp"
+                            android:text="핵심교양" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="#FFBA95F1"
+                            android:fontFamily="@font/jua"
+                            android:background="#FFFFFF"
+                            android:layout_margin="1dp"
+                            android:text="진로소양" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="#FFBA95F1"
+                            android:fontFamily="@font/jua"
+                            android:background="#FFFFFF"
+                            android:layout_margin="1dp"
+                            android:text="졸업학점" />
+                    </TableRow>
+                    <TableRow
+                        android:background="#E9DCFB" >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="#FFBA95F1"
+                            android:fontFamily="@font/jua"
+                            android:background="#FFFFFF"
+                            android:layout_margin="1dp"
+                            android:text="필수이수학점" />
+                        <TextView
+                            android:id="@+id/score1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="#FFBA95F1"
+                            android:background="#FFFFFF"
+                            android:layout_margin="1dp"
+                            android:fontFamily="@font/jua"/>
+                        <TextView
+                            android:id="@+id/score2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="#FFBA95F1"
+                            android:background="#FFFFFF"
+                            android:layout_margin="1dp"
+                            android:fontFamily="@font/jua" />
+
+                        <TextView
+                            android:id="@+id/score3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="#FFBA95F1"
+                            android:background="#FFFFFF"
+                            android:layout_margin="1dp"
+                            android:fontFamily="@font/jua" />
+                        <TextView
+                            android:id="@+id/score4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="#FFBA95F1"
+                            android:background="#FFFFFF"
+                            android:layout_margin="1dp"
+                            android:fontFamily="@font/jua" />
+
+                    </TableRow>
+                    <TableRow
+                        android:background="#E9DCFB" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:fontFamily="@font/jua"
+                            android:gravity="center"
+                            android:text="학생개인학점"
+                            android:layout_margin="1dp"
+                            android:textColor="#FFBA95F1"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/e1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="#FFBA95F1"
+                            android:background="#FFFFFF"
+                            android:layout_margin="1dp"
+                            android:fontFamily="@font/jua"/>
+                        <TextView
+                            android:id="@+id/e2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="#FFBA95F1"
+                            android:background="#FFFFFF"
+                            android:layout_margin="1dp"
+                            android:fontFamily="@font/jua" />
+                        <TextView
+                            android:id="@+id/e3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="#FFBA95F1"
+                            android:background="#FFFFFF"
+                            android:layout_margin="1dp"
+                            android:fontFamily="@font/jua" />
+                        <TextView
+                            android:id="@+id/e4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="#FFBA95F1"
+                            android:background="#FFFFFF"
+                            android:layout_margin="1dp"
+                            android:fontFamily="@font/jua" />
+
+                    </TableRow>
+                    <TableRow
+                        android:background="#E9DCFB" >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="#FFBA95F1"
+                            android:fontFamily="@font/jua"
+                            android:background="#FFFFFF"
+                            android:layout_margin="1dp"
+                            android:text="결과" />
+                        <TextView
+                            android:id="@+id/score11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="#FFBA95F1"
+                            android:background="#FFFFFF"
+                            android:layout_margin="1dp"
+                            android:fontFamily="@font/jua"/>
+                        <TextView
+                            android:id="@+id/score12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="#FFBA95F1"
+                            android:background="#FFFFFF"
+                            android:layout_margin="1dp"
+                            android:fontFamily="@font/jua" />
+                        <TextView
+                            android:id="@+id/score13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="#FFBA95F1"
+                            android:background="#FFFFFF"
+                            android:layout_margin="1dp"
+                            android:fontFamily="@font/jua" />
+                        <TextView
+                            android:id="@+id/score14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="#FFBA95F1"
+                            android:background="#FFFFFF"
+                            android:layout_margin="1dp"
+                            android:fontFamily="@font/jua" />
+                    </TableRow>
+                </TableLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/elNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="핵심교양(4영역) | "
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/el1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="공학과기술 "
+                    android:textColor="#BCBCBC"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/el2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:fontFamily="sans-serif-black"
+                    android:text="문학과예술 "
+                    android:textColor="#BCBCBC"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/el3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:fontFamily="sans-serif-black"
+                    android:text="사회의이해 "
+                    android:textColor="#BCBCBC"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/el4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:fontFamily="sans-serif-black"
+                    android:text="역사의해석 "
+                    android:textColor="#BCBCBC"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/el5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:fontFamily="sans-serif-black"
+                    android:text="인식과가치 "
+                    android:textColor="#BCBCBC"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/el6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:fontFamily="sans-serif-black"
+                    android:text="자연의설명  "
+                    android:textColor="#BCBCBC"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/elNotice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="sans-serif-black"
+                android:text="공통교양은 필수과목 6학점을 포함하여 총 15학점을 이수하여야 합니다."
+                android:textSize="10sp" />
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jua"
+                    android:text="전공 - "
+                    android:textColor="#673AB7"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/myMajor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:fontFamily="@font/jua"
+                    android:text="내전공"
+                    android:textColor="#673AB7"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:id="@+id/table2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="#E9DCFB"
+                    android:padding="8dp"
+                    android:stretchColumns="*"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TableRow
+                        android:background="#E9DCFB" >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="#FFBA95F1"
+                            android:fontFamily="@font/jua"
+                            android:background="#FFFFFF"
+                            android:layout_margin="1dp"
+                            android:text="이수구분" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="#FFBA95F1"
+                            android:fontFamily="@font/jua"
+                            android:background="#FFFFFF"
+                            android:layout_margin="1dp"
+                            android:text="핵심전공" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="#FFBA95F1"
+                            android:fontFamily="@font/jua"
+                            android:background="#FFFFFF"
+                            android:layout_margin="1dp"
+                            android:text="심화전공" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="#FFBA95F1"
+                            android:fontFamily="@font/jua"
+                            android:background="#FFFFFF"
+                            android:layout_margin="1dp"
+                            android:text="졸업학점" />
+                    </TableRow>
+                    <TableRow
+                        android:background="#E9DCFB" >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="#FFBA95F1"
+                            android:fontFamily="@font/jua"
+                            android:background="#FFFFFF"
+                            android:layout_margin="1dp"
+                            android:text="필수이수학점" />
+                        <TextView
+                            android:id="@+id/core1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="#FFBA95F1"
+                            android:background="#FFFFFF"
+                            android:layout_margin="1dp"
+                            android:fontFamily="@font/jua"/>
+                        <TextView
+                            android:id="@+id/core2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="#FFBA95F1"
+                            android:background="#FFFFFF"
+                            android:layout_margin="1dp"
+                            android:fontFamily="@font/jua" />
+                        <TextView
+                            android:id="@+id/core3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="#FFBA95F1"
+                            android:background="#FFFFFF"
+                            android:layout_margin="1dp"
+                            android:fontFamily="@font/jua" />
+
+
+                    </TableRow>
+                    <TableRow
+                        android:background="#E9DCFB" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:fontFamily="@font/jua"
+                            android:gravity="center"
+                            android:text="학생개인학점"
+                            android:layout_margin="1dp"
+                            android:textColor="#FFBA95F1"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/cm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="#FFBA95F1"
+                            android:background="#FFFFFF"
+                            android:layout_margin="1dp"
+                            android:fontFamily="@font/jua"/>
+                        <TextView
+                            android:id="@+id/im"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="#FFBA95F1"
+                            android:background="#FFFFFF"
+                            android:layout_margin="1dp"
+                            android:fontFamily="@font/jua" />
+                        <TextView
+                            android:id="@+id/graduatemajor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="#FFBA95F1"
+                            android:background="#FFFFFF"
+                            android:layout_margin="1dp"
+                            android:fontFamily="@font/jua" />
+
+                    </TableRow>
+                    <TableRow
+                        android:background="#E9DCFB" >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="#FFBA95F1"
+                            android:fontFamily="@font/jua"
+                            android:background="#FFFFFF"
+                            android:layout_margin="1dp"
+                            android:text="결과" />
+                        <TextView
+                            android:id="@+id/score22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="#FFBA95F1"
+                            android:background="#FFFFFF"
+                            android:layout_margin="1dp"
+                            android:fontFamily="@font/jua"/>
+                        <TextView
+                            android:id="@+id/score23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="#FFBA95F1"
+                            android:background="#FFFFFF"
+                            android:layout_margin="1dp"
+                            android:fontFamily="@font/jua" />
+                        <TextView
+                            android:id="@+id/score24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="#FFBA95F1"
+                            android:background="#FFFFFF"
+                            android:layout_margin="1dp"
+                            android:fontFamily="@font/jua" />
+                    </TableRow>
+                </TableLayout>
+            </HorizontalScrollView>
+
+
+            <TextView
+                android:id="@+id/majNotice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="sans-serif-black"
+                android:text="TextView"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:id="@+id/invisibleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="#E9DCFB"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/whatMajor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/jua"
+                            android:textColor="#FFBA95F1"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:fontFamily="@font/jua"
+                            android:text=" - "
+                            android:textColor="#FFBA95F1"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/Dmajor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:fontFamily="@font/jua"
+                            android:text="과이름"
+                            android:textColor="#FFBA95F1"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/mustScore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/jua"
+                            android:text="필수이수학점 (핵심/심화) : "
+                            android:textColor="#FFBA95F1" />
+
+                        <TextView
+                            android:id="@+id/scoreA"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-black"
+                            android:text="TextView"
+                            android:textColor="#FFBA95F1" />
+
+                        <LinearLayout
+                            android:id="@+id/invisible1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/and1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" / " />
+
+                            <TextView
+                                android:id="@+id/scoreB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-black"
+                                android:text="TextView"
+                                android:textColor="#FFBA95F1" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/myScoreT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/jua"
+                            android:text="학생개인학점 (핵심/심화) : "
+                            android:textColor="#FFBA95F1" />
+
+                        <TextView
+                            android:id="@+id/myScoreA"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:fontFamily="sans-serif-black"
+                            android:text="TextView"
+                            android:textColor="#FFBA95F1" />
+
+                        <LinearLayout
+                            android:id="@+id/invisible2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/and2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" / " />
+
+                            <TextView
+                                android:id="@+id/myScoreB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-black"
+                                android:text="TextView"
+                                android:textColor="#FFBA95F1" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/goCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_200"
+            android:fontFamily="@font/jua"
+            android:text="수강목록 확인하기" />
+
+
+    </LinearLayout>
+</LinearLayout>
